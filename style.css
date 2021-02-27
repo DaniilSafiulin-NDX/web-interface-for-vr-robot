@@ -1,0 +1,100 @@
+body{
+	background-color: #696969;
+}
+
+.Go{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0000FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Go:hover {background-color: #00008B}
+
+.Go:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.Down{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0000FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Down:hover {background-color: #00008B}
+
+.Down:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.Left{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0000FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Left:hover {background-color: #00008B}
+
+.Left:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.Right{
+	display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0000FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.Right:hover {background-color: #00008B}
+
+.Right:active {
+  background-color: #00008B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#wrapper{
+	color: #fff;
+}
