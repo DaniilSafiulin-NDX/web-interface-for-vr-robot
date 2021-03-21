@@ -9,41 +9,45 @@
 <body onload="init_api()">
   <div class="card" style="width: 640px;">
     <div id="myVideo" class="card-img-top" style="height: 480px; background-color: black;"> </div>
-    <button onclick="connect()" value="PLAY" class="btn btn-success">PLAY<button>
+      <div class="card-body" style="display: inline-flex;">
+	<div>
+          <button onclick="connect()" value="PLAY" class="btn btn-success">PLAY</button>
+        </div>
+        <table>
+          <tr>
+            <td></td>
+            <td>
+	      <button type="submit" method="post" value="Go" name="b1" class="btn btn-primary">
+	        <img src="imgs/arrow-up.svg"></i>
+              </button>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+	      <button type="submit" method="post" value="Left" name="b3" class="btn btn-primary">
+	        <img src="imgs/arrow-left.svg"></i>
+              </button>
+            </td>
+  	    <td></td>
+            <td>
+	      <button type="submit" method="post" value="Right" name="b4" class="btn btn-primary">
+	        <img src="imgs/arrow-right.svg"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+           <td></td>
+           <td>
+	     <button type="submit" method="post" value="Down" name="b2" class="btn btn-primary">
+	       <img src="imgs/arrow-down.svg"></i>
+             </button>
+           </td>
+           <td></td>
+          </tr>
+        </table>
+      </div>
   </div>
-  <table>
-    <tr>
-      <td></td>
-      <td>
-	<button type="submit" method="post" value="Go" name="b1" class="btn btn-primary">
-	  <img src="imgs/arrow-up.svg"></i>
-        </button>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>
-	<button type="submit" method="post" value="Left" name="b3" class="btn btn-primary">
-	  <img src="imgs/arrow-left.svg"></i>
-        </button>
-      </td>
-  		<td></td>
-      <td>
-	<button type="submit" method="post" value="Right" name="b4" class="btn btn-primary">
-	  <img src="imgs/arrow-right.svg"></i>
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>
-	<button type="submit" method="post" value="Down" name="b2" class="btn btn-primary">
-	  <img src="imgs/arrow-down.svg"></i>
-        </button>
-      </td>
-      <td></td>
-    </tr>
-  </table>
 
 </body>
 </html>
