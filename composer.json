@@ -1,0 +1,18 @@
+{
+	"desciption": "service for conrol robot",
+	"license": "GNU/GPLv3",
+	"autors": [
+		{
+			"name": "Egor Bakulin",
+			"email": "egorbakulin@yahoo.com"
+		},
+		{
+			"name": "Daniil Safiulin",
+			"email": "Safiulin2020@bk.ru"
+		}
+	],
+	"require": {
+		"php": ">=7.3",
+		"twbs/bootstrap":"4.5.3"
+	}
+}

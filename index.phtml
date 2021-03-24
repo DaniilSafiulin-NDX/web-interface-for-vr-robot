@@ -1,73 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
   <script type="text/javascript" src="my_player.js"></script>
-<meta charset="utf-8" />
-<title>VRStart</title>
-<style>
-</style>
+  <meta charset="utf-8">
+  <title>Robot interface</title>
 </head>
 <body onload="init_api()">
-  <div id="myVideo" style="width:320px;height:240px;border: solid 1px">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br></b><input type="button" onclick="connect()" value="PLAY"/>
+  <div class="card" style="width: 640px;">
+    <div id="myVideo" class="card-img-top" style="height: 480px; background-color: black;"> </div>
+      <div class="card-body" style="display: inline-flex;">
+	<div>
+          <button onclick="connect()" value="PLAY" class="btn btn-success">PLAY</button>
+        </div>
+        <table>
+          <tr>
+            <td></td>
+            <td>
+	      <button type="submit" method="post" value="Go" name="b1" class="btn btn-primary">
+	        <img src="imgs/arrow-up.svg"></i>
+              </button>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+	      <button type="submit" method="post" value="Left" name="b3" class="btn btn-primary">
+	        <img src="imgs/arrow-left.svg"></i>
+              </button>
+            </td>
+  	    <td></td>
+            <td>
+	      <button type="submit" method="post" value="Right" name="b4" class="btn btn-primary">
+	        <img src="imgs/arrow-right.svg"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+           <td></td>
+           <td>
+	     <button type="submit" method="post" value="Down" name="b2" class="btn btn-primary">
+	       <img src="imgs/arrow-down.svg"></i>
+             </button>
+           </td>
+           <td></td>
+          </tr>
+        </table>
+      </div>
   </div>
-  <div id="wrapper">
-    <h1><?php echo $message;?></h1>
-    <p><?php var_dump($_GET);?></p>
-    <form>
-     
-      <tr>
-        <td>
-          <div class="Go">
-          <p>
-            <input type="submit" method="post" value="Go" name="b1">
-          </p>
-        </div>
-      </td>
-      </tr>
 
-      <tr>
-        <td>
-          <div class="Down">
-            <p>
-            <input type="submit" method="post" value="Down" name="b2">
-          </p>
-        </div>
-      </td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="Left">
-            <p>
-            <input type="submit" method="post" value="Left" name="b3">
-          </p>
-        </div>
-      </td>
-      </tr>
-
-      <tr>
-        <td>
-            <div class="Right">
-              <p>
-              <input type="submit" method="post" value="Right" name="b4">
-            </p>
-          </div>
-        </td>
-      </tr>
-    </div>
- 
-    </form>
-    <div id="header">
-    </div>
-    <div id="sidebar">
-    </div>
-    <div id="content">
-    </div>
-<!--Подвал-->
-    <div id="footer">
-    </div>
-  </div>
 </body>
 </html>
